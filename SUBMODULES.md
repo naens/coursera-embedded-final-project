@@ -15,7 +15,7 @@ This document lists the external projects that should be added as Git submodules
 - Adding poweroff functionality
 - Integration with the custom display and keyboard drivers
 
-**License:** Assembly (check repository for license details)
+**License:** MIT License
 
 **How to add as submodule:**
 ```bash
@@ -43,10 +43,10 @@ git submodule add https://gitlab.com/ccpm-86/ccpm.git ccpm
 
 ## Related Projects
 
-The following project is related but hosted by the same user on GitLab:
+The following project is related and may contain code that will be adapted:
 
 - **CCP/M-86 QEMU Build Project:** https://gitlab.com/ccpm-86/ccpm
-  - This contains code that will be adapted and shared for this project
+  - Mentioned in the wiki as a source of shared and adapted code
 
 ## Additional Information
 
