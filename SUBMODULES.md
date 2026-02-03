@@ -41,14 +41,9 @@ git submodule add https://github.com/adriancable/8086tiny.git 8086tiny
 git submodule add https://gitlab.com/ccpm-86/ccpm.git ccpm
 ```
 
-## Related Projects
-
-The following project is related and may contain code that will be adapted:
-
-- **CCP/M-86 QEMU Build Project:** https://gitlab.com/ccpm-86/ccpm
-  - Mentioned in the wiki as a source of shared and adapted code
-
 ## Additional Information
+
+**Note:** The wiki mentions a "CCP/M-86 QEMU Build Project" which is part of the same repository (https://gitlab.com/ccpm-86/ccpm) as the main CCP/M-86 source code. This project contains both the source code and QEMU build configurations that will be adapted for this embedded Linux implementation.
 
 For more details about how these projects integrate into the overall system architecture, see:
 - [Project Overview](https://github.com/naens/coursera-embedded-final-project/wiki/Project-Overview)
