@@ -1,0 +1,4 @@
+config BR2_PACKAGE_8086TINY
+	bool "8086tiny emulator"
+	help
+	  8086tiny emulator

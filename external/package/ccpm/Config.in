@@ -1,0 +1,4 @@
+config BR2_PACKAGE_CCPM
+	bool "CCP/M-86"
+	help
+	  Adds the CCP/M-86 image to the installation.
