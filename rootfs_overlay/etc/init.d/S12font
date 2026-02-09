@@ -1,0 +1,18 @@
+#!/bin/sh
+#
+# Set console font on all VTs
+#
+
+FONT="/root/fonts/ter-i12n.psf"
+
+case "$1" in
+	start)
+		printf 'Setting console font: '
+		for vt in /dev/tty[0-9]*; do
+			loadfont < "$FONT" > "$vt" 2>/dev/null
+		done
+		echo "OK"
+		;;
+	*)
+		;;
+esac
