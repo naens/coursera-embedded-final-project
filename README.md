@@ -6,5 +6,7 @@ Embedded Linux CP/M
 [Project Schedule](https://github.com/users/naens/projects/1/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C255713662%5D&groupedBy%5BcolumnId%5D=255713662)
 
 ## Linked Projects
-
-For information about external projects to be added as submodules, see [SUBMODULES.md](SUBMODULES.md)
+* [8086tiny](https://github.com/naens/8086tiny): emulator to use.
+* [CCP/M-86](https://gitlab.com/ccpm-86/ccpm): operating system to run on the emulator.
+* [FBTFT KeDei 6.2 driver](https://github.com/naens/FBTFT_KeDei_35_lcd_v62): a FBTFT driver to use with the LCD display (temporary: should be replaced with a proper DRM MIPI-DBI driver).
+* TODO: a keyboard driver
