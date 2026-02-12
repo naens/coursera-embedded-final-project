@@ -1,0 +1,6 @@
+BR2_ROOTFS_OVERLAY="../rootfs_overlay"
+BR2_ROOTFS_POST_IMAGE_SCRIPT="board/raspberrypi3/post-image.sh ../board/post-image.sh"
+BR2_PACKAGE_BCM2835=y
+BR2_PACKAGE_CCPM=y
+BR2_PACKAGE_8086TINY=y
+BR2_PACKAGE_KEDEI62=y
