@@ -8,3 +8,6 @@
 [submodule "kedei62"]
 	path = kedei62
 	url = https://github.com/naens/kedei62.git
+[submodule "8086tiny"]
+	path = 8086tiny
+	url = https://github.com/naens/8086tiny.git
