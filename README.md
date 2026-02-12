@@ -8,5 +8,5 @@ Embedded Linux CP/M
 ## Linked Projects
 * [8086tiny](https://github.com/naens/8086tiny): emulator to use.
 * [CCP/M-86](https://gitlab.com/ccpm-86/ccpm): operating system to run on the emulator.
-* [FBTFT KeDei 6.2 driver](https://github.com/naens/FBTFT_KeDei_35_lcd_v62): a FBTFT driver to use with the LCD display (temporary: should be replaced with a proper DRM MIPI-DBI driver).
+* [DRM KeDei 6.2 driver](https://github.com/naens/kedei62): a driver to use with the LCD display.
 * TODO: a keyboard driver
