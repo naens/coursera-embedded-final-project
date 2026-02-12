@@ -51,6 +51,6 @@ dkms.conf
 # debug information files
 *.dwo
 
-buildroot_rpi3
+buildroot_*
 
 *~
