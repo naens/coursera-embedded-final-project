@@ -1,5 +1,0 @@
-config BR2_PACKAGE_KEDEI
-	bool "KeDei v6.2 driver"
-	help
-	  Display TFTLCD driver for Kedei v6.2
-

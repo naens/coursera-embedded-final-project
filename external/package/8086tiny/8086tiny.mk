@@ -8,6 +8,7 @@
 8086TINY_SITE = 'git@github.com:naens/8086tiny.git'
 8086TINY_SITE_METHOD = git
 
+
 define 8086TINY_BUILD_CMDS
 	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D) no_graphics
 endef

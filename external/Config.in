@@ -1,3 +1,3 @@
 source "$BR2_EXTERNAL_project_base_PATH/package/ccpm/Config.in"
 source "$BR2_EXTERNAL_project_base_PATH/package/8086tiny/Config.in"
-source "$BR2_EXTERNAL_project_base_PATH/package/kedei/Config.in"
+source "$BR2_EXTERNAL_project_base_PATH/package/kedei62/Config.in"
