@@ -2,9 +2,9 @@
 	path = buildroot
 	url = https://gitlab.com/buildroot.org/buildroot.git
 	branch = 2025.11.x
-[submodule "FBTFT_KeDei_35_lcd_v62"]
-	path = FBTFT_KeDei_35_lcd_v62
-	url = git@github.com:naens/FBTFT_KeDei_35_lcd_v62.git
+[submodule "ccpm"]
+	path = ccpm
+	url = https://gitlab.com/ccpm-86/ccpm.git
 [submodule "kedei"]
-	path = kedei
-	url = git@github.com:naens/FBTFT_KeDei_35_lcd_v62.git
+	path = kedei62
+	url = https://github.com/naens/kedei62.git
