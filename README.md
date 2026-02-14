@@ -1,5 +1,5 @@
 # coursera-embedded-final-project
-Embedded Linux CP/M
+Embedded Linux CCP/M-86
 
 [Project Overview](https://github.com/naens/coursera-embedded-final-project/wiki/Project-Overview)
 
