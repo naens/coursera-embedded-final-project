@@ -1,0 +1,4 @@
+config BR2_PACKAGE_BUTTON_DRV
+	bool "button_drv"
+	help
+	  The button_drv driver

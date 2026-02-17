@@ -1,0 +1,19 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "brcm,bcm2835";
+
+    fragment@0 {
+        target-path = "/";
+        __overlay__ {
+            my_button: my_button {
+                compatible = "custom,button-driver";
+                clock-gpios = <&gpio 17 0>; /* 0 = active high */
+                data-gpios = <&gpio 4 0>; /* 0 = active high */
+                reset-gpios = <&gpio 27 1>; /* 1 = active low */
+                status = "okay";
+            };
+        };
+    };
+};
