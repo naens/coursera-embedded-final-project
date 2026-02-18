@@ -1,0 +1,6 @@
+config BR2_PACKAGE_XT_GPIO
+	bool "xt_gpio"
+	depends on BR2_LINUX_KERNEL
+	help
+	  GPIO-backed XT keyboard serio transport driver and DT overlay
+	  for Raspberry Pi targets.
