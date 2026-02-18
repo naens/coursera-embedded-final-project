@@ -1,0 +1,26 @@
+/dts-v1/;
+/plugin/;
+#include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/interrupt-controller/irq.h>
+
+/ {
+    compatible = "brcm,bcm2835";
+
+    fragment@0 {
+        target-path = "/";
+        __overlay__ {
+            xt_keyboard {
+                compatible = "andrei,xt-gpio";
+                /*
+                 * Use ACTIVE_HIGH here because the driver decodes protocol
+                 * bit levels directly (not asserted/deasserted semantics).
+                 */
+                clock-gpios = <&gpio 17 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN)>;
+                data-gpios = <&gpio 4 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN)>;
+                reset-gpios = <&gpio 27 GPIO_ACTIVE_LOW>; /* 1 = active low */
+                interrupts-extended = <&gpio 17 IRQ_TYPE_EDGE_FALLING>;
+                status = "okay";
+            };
+        };
+    };
+};
