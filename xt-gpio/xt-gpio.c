@@ -305,7 +305,6 @@ static void xt_gpio_remove(struct platform_device *pdev) {
     struct xt_drv_data *drv_data = platform_get_drvdata(pdev);
     serio_unregister_port(drv_data->serio);
     dev_info(&pdev->dev, "Driver removed\n");
-    kfree(drv_data->serio);
 }
 
 static const struct of_device_id xt_gpio_match[] = {
