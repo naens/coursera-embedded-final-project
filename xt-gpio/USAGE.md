@@ -40,8 +40,8 @@ Current overlay file: `xt-gpio.dts`
 
 Default GPIOs:
 
-- `clock-gpios = <&gpio 17 GPIO_ACTIVE_LOW>;`
-- `data-gpios = <&gpio 4 GPIO_ACTIVE_LOW>;`
+- `clock-gpios = <&gpio 17 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN)>;`
+- `data-gpios = <&gpio 4 (GPIO_ACTIVE_HIGH | GPIO_OPEN_DRAIN)>;`
 - `reset-gpios = <&gpio 27 GPIO_ACTIVE_LOW>;` (optional in driver)
 - IRQ on clock falling edge
 
@@ -110,7 +110,7 @@ grep -i xt-gpio /proc/interrupts
 
 Usually polarity mismatch or stale overlay on target.
 
-- Ensure deployed DT overlay uses `GPIO_ACTIVE_LOW` for `clock-gpios` and `data-gpios`.
+- Ensure deployed DT overlay uses `GPIO_ACTIVE_HIGH` for `clock-gpios` and `data-gpios`.
 - Ensure driver reads logical GPIO value directly (`gpiod_get_value`), without manual inversion.
 - Reinstall updated `xt-gpio.dtbo` and reboot.
 

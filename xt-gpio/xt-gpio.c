@@ -128,14 +128,8 @@ static irqreturn_t gpio_irq_handler(int irq, void *dev_id) {
 
         switch (cnt) {
     case XT_START_BIT:
-        /* XT mode-1 framing uses a high start bit. */
-        if (!data) {
-            int raw = gpiod_get_raw_value(drv_data->gpiod_data);
-
-            dev_err(drv_data->dev,
-                    "RX: start bit should be HIGH (logical=%d raw=%d active_low=%d)\n",
-                    data, raw, gpiod_is_active_low(drv_data->gpiod_data));
-            goto err;
+        if (data) {
+            dev_dbg(drv_data->dev, "RX: START bit LOW detected\n");
         }
         byte = 0; // Clear byte for new data
         break;
@@ -166,7 +160,7 @@ static irqreturn_t gpio_irq_handler(int irq, void *dev_id) {
          * to verify it's HIGH (stop bit), but there's no
          * clock edge to trigger an interrupt.
          */
-        
+
         /* Deliver the completed byte */
         serio_interrupt(drv_data->serio, byte, 0);
         dev_dbg(drv_data->dev, "RX: received byte 0x%02x\n", byte);
@@ -308,7 +302,6 @@ static void xt_gpio_remove(struct platform_device *pdev) {
 }
 
 static const struct of_device_id xt_gpio_match[] = {
-    { .compatible = "andrei,xt-gpio" },
     { .compatible = "xt-gpio" },
     { }
 };

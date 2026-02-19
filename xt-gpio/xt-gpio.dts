@@ -10,7 +10,7 @@
         target-path = "/";
         __overlay__ {
             xt_keyboard {
-                compatible = "andrei,xt-gpio";
+                compatible = "xt-gpio";
                 /*
                  * Use ACTIVE_HIGH here because the driver decodes protocol
                  * bit levels directly (not asserted/deasserted semantics).
