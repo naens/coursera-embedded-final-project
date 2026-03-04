@@ -1,0 +1,16 @@
+#!/bin/sh
+
+loadfont /etc/fonts/ter-i16b.psf
+
+# KeDei 6.2 TFT display
+modprobe spi_bcm2835
+modprobe kedei62
+
+# XT keyboard GPIO driver
+modprobe xtkbd
+modprobe xt-gpio
+
+exec setsid sh -c '
+    /root/8086tiny/8086tiny /root/8086tiny/bios.bin /root/floppy.img
+    poweroff
+'
