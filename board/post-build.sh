@@ -9,5 +9,5 @@ cp -v ../button_py/* ${TARGET_DIR}/root/button_py
 #    ${TARGET_DIR}/etc/inittab
 
 sed -i \
-    -e 's,^tty1::.*$,tty1::respawn:/sbin/getty -L -n -l /bin/autologin tty1 0 vt100,' \
+    -e 's,^tty1::.*$,tty1::respawn:/sbin/getty -L -n -l /root/run.sh tty1 0 vt100,' \
     ${TARGET_DIR}/etc/inittab

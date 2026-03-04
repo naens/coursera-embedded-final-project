@@ -3,7 +3,7 @@
 # Set console font on all VTs
 #
 
-FONT="/root/fonts/ter-i12n.psf"
+FONT="/root/fonts/ter-i16b.psf"
 
 case "$1" in
 	start)

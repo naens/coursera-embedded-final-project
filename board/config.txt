@@ -29,6 +29,6 @@ dtparam=spi=on
 
 dtoverlay=pi3-disable-wifi
 dtoverlay=pi3-disable-bt
-dtoverlay=kedei62,rotate=90
+dtoverlay=kedei62,rotate=270
 
 dtoverlay=xt-gpio
