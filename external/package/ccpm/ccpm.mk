@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-CCPM_VERSION = '66836d2f20517d5c6c2cbb2d9c37761f0575734e'
+CCPM_VERSION = '2915deb5ab4f9d3e128c791ad49ed32520cf2c4b'
 CCPM_SITE = 'git@gitlab.com:ccpm-86/ccpm.git'
 CCPM_SITE_METHOD = git
 

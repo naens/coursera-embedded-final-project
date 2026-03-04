@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-8086TINY_VERSION = '09ff3ff779437173f24803eec318f4475cbfd02b'
+8086TINY_VERSION = '81bac1a056754545ec2c3e00205f099bb030c121'
 8086TINY_SITE = 'git@github.com:naens/8086tiny.git'
 8086TINY_SITE_METHOD = git
 
