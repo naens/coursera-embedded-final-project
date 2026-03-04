@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-KEDEI62_VERSION = 1.0
+KEDEI62_VERSION = '8626127031bcd8b8773e2459d2175ad3c5ad3917'
 KEDEI62_SITE = https://github.com/naens/kedei62
 KEDEI62_SITE_METHOD = git
 
