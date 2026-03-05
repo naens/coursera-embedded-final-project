@@ -11,6 +11,7 @@
 [submodule "8086tiny"]
 	path = 8086tiny
 	url = https://github.com/naens/8086tiny.git
+	branch = an2026
 [submodule "xt-gpio"]
 	path = xt-gpio
 	url = https://github.com/naens/xt-gpio.git

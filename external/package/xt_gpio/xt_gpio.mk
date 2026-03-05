@@ -4,9 +4,11 @@
 #
 ##############################################################
 
-XT_GPIO_VERSION = 0.1
-XT_GPIO_SITE = $(BR2_EXTERNAL_project_base_PATH)/../xt-gpio
-XT_GPIO_SITE_METHOD = local
+XT_GPIO_VERSION = '413715f725d900e618a7375c5d14341e8182484f'
+XT_GPIO_SITE = 'https://github.com/naens/xt-gpio.git'
+XT_GPIO_SITE_METHOD = git
+XT_GPIO_LICENSE = GPL-2.0
+XT_GPIO_LICENSE_FILES = xt-gpio.c
 XT_GPIO_INSTALL_IMAGES = YES
 
 $(eval $(kernel-module))
