@@ -5,6 +5,8 @@ Embedded Linux CCP/M-86
 
 [Project Schedule](https://github.com/users/naens/projects/1/views/1?visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C255713662%5D&groupedBy%5BcolumnId%5D=255713662)
 
+[Video Page](https://github.com/naens/coursera-embedded-final-project/wiki/Andrei-Final-Project-Video)
+
 ## Linked Projects
 * [8086tiny](https://github.com/naens/8086tiny): emulator to use.
 * [CCP/M-86](https://gitlab.com/ccpm-86/ccpm): operating system to run on the emulator.
